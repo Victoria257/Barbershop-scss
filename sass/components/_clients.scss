@@ -1,0 +1,88 @@
+.clients {
+  
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+    }
+    
+    &__name {
+        width: 210px;
+        height: 92px;
+    }
+
+    &__icon {
+        width: 106px;
+        height: 60px;
+    }
+
+}
+
+
+.clients__link {
+    display: flex;
+    padding: 16px 52px;
+    width: 100%;
+    border: solid 1px rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    fill: rgba(175, 177, 184, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-color: var(--blue);
+        fill: var(--blue);
+    }
+
+}
+
+/*-------------------------------------------------TABLET--------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    .clients__link {
+        padding: 16px 60px;
+    }
+
+    .clients__name {
+        width: 226px;
+        height: 92px;
+    }
+}
+
+/*-------------------------------------------------DESKTOP--------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+    .clients {
+
+        &__title {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
+
+        &__box {
+            flex-wrap: nowrap;
+        }
+
+        &__link {
+            padding: 16px 32px;
+        }
+    }
+}

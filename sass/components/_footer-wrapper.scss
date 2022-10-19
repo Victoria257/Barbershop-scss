@@ -1,0 +1,47 @@
+.footer {
+    background-color: var(--dark-background);
+    color: var(--white);
+    outline: 2px solid none;
+    text-align: center;
+
+}
+
+
+/*---------------------------------------TABLET----------------------------------------*/
+
+
+    @media screen and (min-width: 768px) {
+
+        .footer {
+
+           
+            &__envelop {
+                display: flex;
+            }
+
+            &__wrapper {
+                margin-left: 61px;
+            }
+        }
+
+    }
+
+ /*---------------------------------------DESKTOP----------------------------------------*/
+
+  @media screen and (min-width: 1200px) {
+
+    .footer {
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &__wrapper {
+            margin-left: 0;
+            text-align: start;
+        }
+    }
+  }
