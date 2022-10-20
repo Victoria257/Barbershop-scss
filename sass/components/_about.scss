@@ -1,10 +1,63 @@
 .about {
 
+
     &__image {
         display: none;
     }
 
     &__pre-title {
+        display: flex;
+        align-items: center;
+
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
         color: var--black;
+
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        &::before {
+            content: "";
+            width: 60px;
+            height: 1px;
+            background: var(--black);
+    
+            margin-right: 20px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        letter-spacing: 0.05em;
+        color: var(var--black);
+
+        margin-top: 20px;
+    }
+
+    &__next-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.02em;
+        color: rgba(85, 85, 85, 1);
+
+        margin-top: 20px;
+    }
+
+    &__paragraf {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+        color: rgba(85, 85, 85, 1);
+
+        margin-top: 20px;
+    }
+
+    &__btn {
+        margin-top: 40px;
     }
 }
