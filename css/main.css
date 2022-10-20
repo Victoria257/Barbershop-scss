@@ -68,8 +68,8 @@ button {
 .container {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding: 84px 31px;
   outline: 1px solid rgb(147, 92, 209);
 }
@@ -313,6 +313,50 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 44px;
+}
+.why__list-one {
+  margin-right: 30px;
+  margin-bottom: 35px;
+}
+.why__list-two {
+  margin-top: 35px;
+}
+.why__set-wrapper {
+  background-color: rgb(247, 247, 247);
+}
+.why__set {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 32px;
+  height: 93px;
+}
+.why__set:first-child {
+  margin-bottom: 30px;
+  width: 122px;
+}
+.why__set-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--black);
+  margin-right: 2px;
+}
+.why__set-plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--orange);
+}
+.why__set-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--black);
+  margin-top: 6px;
 }/*# sourceMappingURL=main.css.map */
